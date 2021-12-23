@@ -20,9 +20,7 @@ export class App extends React.Component {
     basket: [],
     productDatabase: [],
     setVoucherRate: voucherRate => {
-      this.setState({ voucherRate: voucherRate }, () => {
-        console.log(this.state.voucherRate);
-      });
+      this.setState({ voucherRate: voucherRate });
     },
 
     addToBasket: productCode => {
@@ -79,7 +77,6 @@ export class App extends React.Component {
 
     const voucherPromise = await fetch("https://geek-shop-backend.herokuapp.com/vouchers");
     const voucher = await voucherPromise.json();
-    this.setState({ productDatabase: voucher });
     localStorage.setItem("voucherDB", JSON.stringify(voucher));
 
     // const voucherDatabase = [
