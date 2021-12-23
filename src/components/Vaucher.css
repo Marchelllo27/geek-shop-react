@@ -1,0 +1,28 @@
+.vaucher {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+}
+
+.vaucher label {
+  margin-bottom: 0;
+}
+
+#promo-input {
+  outline: none;
+  padding: 0.2rem 0.3rem;
+  width: 15rem;
+}
+
+#existe {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+
+/* .vaucher button {
+  border: none;
+  background-color: #A9D1C6;
+  color: rgb(65, 65, 65);
+} */

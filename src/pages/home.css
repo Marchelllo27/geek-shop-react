@@ -1,0 +1,19 @@
+/* Styles du composant ProductList */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-list .card {
+    margin: 1rem 0;
+    width: 20rem;
+}
+.product-list .card h6 {
+    color: #4888DD;
+}
+.product-list .card .price {
+    font-weight: 200;
+}
+.product-list .card .price button {
+    float: right;
+}

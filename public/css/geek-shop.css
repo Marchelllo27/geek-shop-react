@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9F5EF;
+    font-family: 'Raleway', sans-serif;
+    overflow-y: scroll;
+}
+
+h1 {
+    color: #A9D1C6;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.3rem;
+    margin: 2rem 0 1rem;
+    text-align: center;
+}
+
+h2 {
+    color: #4888DD;
+    margin: 2rem 0;
+}
