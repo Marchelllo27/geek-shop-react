@@ -30,10 +30,10 @@ export class ProductList extends React.Component {
           <Link
             exact
             className="nav-link"
-            to={`/product/${product.product_code}`}
+            to={`/product/${product.productCode}`}
           >
             <img
-              src={`/images/products/${product.product_code.toLowerCase()}.jpg`}
+              src={`/images/products/${product.productCode.toLowerCase()}.jpg`}
               className="card-img-top"
               alt={product.description}
             />
@@ -50,7 +50,7 @@ export class ProductList extends React.Component {
             {/* Fourniture du code du produit au bouton via un attribut data-product */}
             <button
               className="btn btn-primary btn-sm"
-              data-product={product.product_code}
+              data-product={product.productCode}
               onClick={this.onClickAddToBasket}
             >
               +
