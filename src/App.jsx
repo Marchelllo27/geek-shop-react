@@ -77,13 +77,17 @@ export class App extends React.Component {
     //   body: new URLSearchParams({ name: "test", reduction: "0.2" }),
     // });
 
-    const voucherDatabase = [
-      { NOEL2020: 0.12 },
-      { ANNIVERSAIRE: 0.15 },
-      { SOLDES_ETE: 0.25 },
-    ];
+    const voucherPromise = await fetch("https://geek-shop-backend.herokuapp.com/vouchers");
+    const voucher = await voucherPromise.json();
+    this.setState({ productDatabase: voucher });
+    localStorage.setItem("voucherDB", JSON.stringify(voucher));
 
-    localStorage.setItem("voucherDB", JSON.stringify(voucherDatabase));
+    // const voucherDatabase = [
+    //   { NOEL2020: 0.12 },
+    //   { ANNIVERSAIRE: 0.15 },
+    //   { SOLDES_ETE: 0.25 },
+    // ];
+    // localStorage.setItem("voucherDB", JSON.stringify(voucherDatabase));
   };
 
   render() {
